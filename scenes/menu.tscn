@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://cqwulsjbdeijl"]
 
 [ext_resource type="Script" uid="uid://fn2oylxfkus6" path="res://scripts/menu.gd" id="1_g18jx"]
-[ext_resource type="Texture2D" uid="uid://blgh7gtwdr4qu" path="res://menu/fondo menu.png" id="1_j0t7f"]
-[ext_resource type="AudioStream" uid="uid://barrg4eg3ksgl" path="res://music/audiomenu.mp3" id="3_6nwqt"]
+[ext_resource type="Texture2D" uid="uid://dfj08gkmf5ggu" path="res://images/fondo menu.png" id="1_j0t7f"]
+[ext_resource type="AudioStream" uid="uid://crpy5opbdb11l" path="res://music/audiomenu.mp3" id="3_6nwqt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g18jx"]
 bg_color = Color(0, 0, 0, 1)
