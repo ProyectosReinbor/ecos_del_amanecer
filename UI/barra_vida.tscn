@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwe1frr4x7m8a"]
+
+[ext_resource type="Texture2D" uid="uid://blikjnygk63ly" path="res://assets/Humble Gift - v1.3/PNG/SpriteSheet.png" id="1_yogle"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqq77"]
+atlas = ExtResource("1_yogle")
+region = Rect2(516, 85, 55, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6nsk"]
+atlas = ExtResource("1_yogle")
+region = Rect2(600, 37, 8, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhl3j"]
+atlas = ExtResource("1_yogle")
+region = Rect2(614, 37, 20, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g67qo"]
+atlas = ExtResource("1_yogle")
+region = Rect2(640, 37, 7, 6)
+
+[node name="barra_vida" type="Node2D"]
+
+[node name="border_vida" type="TextureRect" parent="."]
+offset_right = 55.0
+offset_bottom = 6.0
+texture = SubResource("AtlasTexture_uqq77")
+
+[node name="20" type="TextureRect" parent="."]
+offset_right = 8.0
+offset_bottom = 6.0
+texture = SubResource("AtlasTexture_g6nsk")
+
+[node name="50" type="TextureRect" parent="."]
+offset_left = 8.0
+offset_right = 28.0
+offset_bottom = 6.0
+texture = SubResource("AtlasTexture_dhl3j")
+
+[node name="75" type="TextureRect" parent="."]
+offset_left = 28.0
+offset_right = 48.0
+offset_bottom = 6.0
+texture = SubResource("AtlasTexture_dhl3j")
+
+[node name="100" type="TextureRect" parent="."]
+offset_left = 48.0
+offset_right = 55.0
+offset_bottom = 6.0
+texture = SubResource("AtlasTexture_g67qo")

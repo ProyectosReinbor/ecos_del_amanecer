@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dewslq1kupnl5"]
+
+[ext_resource type="Script" uid="uid://trf6ubckhu3w" path="res://scripts/gestion_familia.gd" id="1_gb0on"]
+[ext_resource type="PackedScene" uid="uid://dp3jhsjxcufc5" path="res://scenes/noche_fuego/padre.tscn" id="1_kdy2q"]
+
+[node name="gestion_familia" type="Node2D" node_paths=PackedStringArray("camera_2d", "padre", "madre", "hijo", "hija", "abuelo")]
+script = ExtResource("1_gb0on")
+camera_2d = NodePath("Camera2D")
+padre = NodePath("padre")
+madre = NodePath("madre")
+hijo = NodePath("hijo")
+hija = NodePath("hija")
+abuelo = NodePath("abuelo")
+
+[node name="madre" parent="." node_paths=PackedStringArray("personaje_lider") instance=ExtResource("1_kdy2q")]
+position = Vector2(49, -19)
+personaje_lider = NodePath("../hijo")
+va_seguir_personaje_lider = true
+
+[node name="hijo" parent="." instance=ExtResource("1_kdy2q")]
+position = Vector2(201, -37)
+es_personaje_lider = true
+
+[node name="hija" parent="." node_paths=PackedStringArray("personaje_lider") instance=ExtResource("1_kdy2q")]
+position = Vector2(31, 49)
+personaje_lider = NodePath("../hijo")
+va_seguir_personaje_lider = true
+
+[node name="padre" parent="." node_paths=PackedStringArray("personaje_lider") instance=ExtResource("1_kdy2q")]
+position = Vector2(-17, -39)
+personaje_lider = NodePath("../hijo")
+va_seguir_personaje_lider = true
+
+[node name="abuelo" parent="." node_paths=PackedStringArray("personaje_lider") instance=ExtResource("1_kdy2q")]
+position = Vector2(-75, -20)
+personaje_lider = NodePath("../hijo")
+va_seguir_personaje_lider = true
+
+[node name="Camera2D" type="Camera2D" parent="."]

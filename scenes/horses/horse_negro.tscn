@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtyi31jok2iqj"]
+
+[ext_resource type="Script" uid="uid://q5rk4puqyxjl" path="res://scripts/horse.gd" id="1_fjfk6"]
+[ext_resource type="SpriteFrames" uid="uid://cwtjcs3xe82vb" path="res://scenes/horses/sprite_frames/horse_negro.tres" id="2_fjfk6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sn8c"]
+size = Vector2(29, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5yl3"]
+size = Vector2(55, 55)
+
+[node name="horse_negro" type="CharacterBody2D" node_paths=PackedStringArray("animated_sprite_2d", "area_2d_mount") groups=["horse"]]
+script = ExtResource("1_fjfk6")
+animated_sprite_2d = NodePath("AnimatedSprite2D")
+area_2d_mount = NodePath("Area2DMontar")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 11)
+shape = SubResource("RectangleShape2D_3sn8c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_fjfk6")
+animation = &"stand_down"
+
+[node name="Area2DMontar" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DMontar"]
+position = Vector2(-0.5, 12.5)
+shape = SubResource("RectangleShape2D_j5yl3")
+debug_color = Color(0.8671792, 0.19486797, 0.7313273, 0.41960785)

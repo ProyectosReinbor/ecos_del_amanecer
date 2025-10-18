@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cujd3baqgic2h"
+path="res://.godot/imported/Predestinacion Aries Vigoht   Marcos Rodriguez _ Música Llanera.mp3-7cef46fcb570a9d8c6aa0a7be714d2a2.mp3str"
+
+[deps]
+
+source_file="res://music/Predestinacion Aries Vigoht   Marcos Rodriguez _ Música Llanera.mp3"
+dest_files=["res://.godot/imported/Predestinacion Aries Vigoht   Marcos Rodriguez _ Música Llanera.mp3-7cef46fcb570a9d8c6aa0a7be714d2a2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

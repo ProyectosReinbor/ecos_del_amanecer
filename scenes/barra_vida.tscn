@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://c12mfpqv7v1oh"]
+
+[ext_resource type="Texture2D" uid="uid://blikjnygk63ly" path="res://assets/Humble Gift - v1.3/PNG/SpriteSheet.png" id="1_54s70"]
+
+[node name="barra_vida" type="Node2D"]
+scale = Vector2(0.7, 0.7)
+
+[node name="border_vida" type="Sprite2D" parent="."]
+position = Vector2(0, -23)
+texture = ExtResource("1_54s70")
+region_enabled = true
+region_rect = Rect2(516, 85, 55, 6)
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(-24, -23)
+texture = ExtResource("1_54s70")
+region_enabled = true
+region_rect = Rect2(600, 37, 8, 6)
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(-10, -23)
+texture = ExtResource("1_54s70")
+region_enabled = true
+region_rect = Rect2(614, 37, 20, 6)
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(10, -23)
+scale = Vector2(1.1, 1)
+texture = ExtResource("1_54s70")
+region_enabled = true
+region_rect = Rect2(614, 37, 20, 6)
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(24, -23)
+texture = ExtResource("1_54s70")
+region_enabled = true
+region_rect = Rect2(640, 37, 7, 6)

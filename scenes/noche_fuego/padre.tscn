@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp3jhsjxcufc5"]
+
+[ext_resource type="Script" uid="uid://bqp3k20mxn2rm" path="res://scenes/noche_fuego/padre.gd" id="1_rkik6"]
+[ext_resource type="SpriteFrames" uid="uid://dl4ygilb8tlgt" path="res://scenes/noche_fuego/padre.tres" id="2_ob4ye"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qodvt"]
+size = Vector2(15, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkik6"]
+size = Vector2(37, 49)
+
+[node name="padre" type="CharacterBody2D" node_paths=PackedStringArray("anim", "area_mount", "collisionShape2D")]
+collision_layer = 3
+script = ExtResource("1_rkik6")
+anim = NodePath("AnimatedSprite2D")
+area_mount = NodePath("Area2DMount")
+collisionShape2D = NodePath("CollisionShape2D2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 7.5)
+shape = SubResource("RectangleShape2D_qodvt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_ob4ye")
+animation = &"carry_walk_up"
+
+[node name="Area2DMount" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DMount"]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_rkik6")
+debug_color = Color(0.86887324, 0.00053097843, 0.8544785, 0.41960785)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)

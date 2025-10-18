@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cshsextboqyvt"
+path="res://.godot/imported/Tirso Aldana - Santo Domingo_256k.mp3-47e0a9c53dbac18e8d5e1bf923493c4d.mp3str"
+
+[deps]
+
+source_file="res://music/Tirso Aldana - Santo Domingo_256k.mp3"
+dest_files=["res://.godot/imported/Tirso Aldana - Santo Domingo_256k.mp3-47e0a9c53dbac18e8d5e1bf923493c4d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

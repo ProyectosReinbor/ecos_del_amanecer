@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceoqcpgktjd2n"]
+
+[ext_resource type="PackedScene" uid="uid://ioly43lk22tc" path="res://scenes/mapa.tscn" id="1_waaes"]
+[ext_resource type="PackedScene" uid="uid://bs06aauxrjt2b" path="res://scenes/horses/horse_naranja.tscn" id="2_0gh6e"]
+[ext_resource type="PackedScene" uid="uid://dtyi31jok2iqj" path="res://scenes/horses/horse_negro.tscn" id="3_xipvn"]
+[ext_resource type="PackedScene" uid="uid://dewslq1kupnl5" path="res://scenes/gestion_familia.tscn" id="4_33icp"]
+
+[node name="Boostrap" type="Node2D"]
+
+[node name="Mapa" parent="." instance=ExtResource("1_waaes")]
+
+[node name="horse_naranja" parent="." instance=ExtResource("2_0gh6e")]
+position = Vector2(183, 81)
+
+[node name="horse_negro" parent="." instance=ExtResource("3_xipvn")]
+position = Vector2(159, -61)
+
+[node name="gestion_familia" parent="." instance=ExtResource("4_33icp")]
+position = Vector2(-9, 26)

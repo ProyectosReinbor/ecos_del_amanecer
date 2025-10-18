@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://xh7bq10bpady"]
+
+[ext_resource type="Texture2D" uid="uid://iipa2npsrsi7" path="res://logos/logo3.jpeg" id="1_sseyc"]
+[ext_resource type="FontFile" uid="uid://b1cxcoj4vgr6b" path="res://assets/boldFont/BoldPixels.ttf" id="2_anb0t"]
+
+[node name="GameOver" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 479.0
+offset_bottom = 263.0
+texture = ExtResource("1_sseyc")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 8.0
+offset_right = 364.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("2_anb0t")
+theme_override_font_sizes/font_size = 50
+text = "GAME OVER"

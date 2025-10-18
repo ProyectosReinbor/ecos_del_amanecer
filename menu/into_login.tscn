@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwhah6hx1pxad"]
+
+[ext_resource type="Texture2D" uid="uid://vcs7wj0kn052" path="res://logo1.jpeg" id="1_0e1ia"]
+[ext_resource type="Texture2D" uid="uid://cuhqfp5omc44p" path="res://assets/IA/logos/reb_games.jpg" id="1_vqnp3"]
+[ext_resource type="Texture2D" uid="uid://1sv1vo42koyw" path="res://logo2.jpeg" id="2_vqnp3"]
+[ext_resource type="Script" uid="uid://g6q1wt14e48k" path="res://menu/timer.gd" id="3_3f6cd"]
+
+[node name="IntoLogin" type="Node2D"]
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 512.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vqnp3")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 484.0
+offset_bottom = 267.0
+texture = ExtResource("2_vqnp3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 484.0
+offset_bottom = 270.0
+texture = ExtResource("1_0e1ia")
+
+[node name="Timer" type="Timer" parent="." node_paths=PackedStringArray("texture1", "texture2", "texture3")]
+autostart = true
+script = ExtResource("3_3f6cd")
+texture1 = NodePath("../TextureRect")
+texture2 = NodePath("../TextureRect2")
+texture3 = NodePath("../TextureRect3")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
