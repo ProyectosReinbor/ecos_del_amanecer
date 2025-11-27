@@ -65,23 +65,23 @@ func dialogos_mision():
 	if (dialogo_actual == 1):
 		buscar_don_eusebio();
 	if (dialogo_actual == 5):
-		if (GameManager.inventory.find(GameManager.Objetos.Documentos) != -1):
-			GameManager.inventory.erase(GameManager.Objetos.Documentos)
+		if (GAME_MANAGER.inventory.find(GAME_MANAGER.Objetos.Documentos) != -1):
+			GAME_MANAGER.inventory.erase(GAME_MANAGER.Objetos.Documentos)
 			se_va_con_don_eusebio = true;
 		else:
 			dialogo_actual += 1;
 			dialogos_mision();
 	elif (dialogo_actual == 7):
-		if (GameManager.inventory.find(GameManager.Objetos.Escopeta) != -1):
-			GameManager.inventory.erase(GameManager.Objetos.Escopeta)
+		if (GAME_MANAGER.inventory.find(GAME_MANAGER.Objetos.Escopeta) != -1):
+			GAME_MANAGER.inventory.erase(GAME_MANAGER.Objetos.Escopeta)
 			se_va_con_don_eusebio = true;
 		else:
 			dialogo_actual += 1;
 			dialogos_mision();
 	
-	GameManager.dead_members()
-	GameManager.dead_members()
-	if (GameManager.game_state == "Game_Over"):
+	GAME_MANAGER.dead_members()
+	GAME_MANAGER.dead_members()
+	if (GAME_MANAGER.game_state == "Game_Over"):
 		get_tree().change_scene_to_file("res://scenes/game_over/game_over.tscn")
 
 	

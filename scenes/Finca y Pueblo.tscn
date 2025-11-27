@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=4 uid="uid://ioly43lk22tc"]
+[gd_scene load_steps=79 format=4 uid="uid://hnlsx0v8jgcd"]
 
 [ext_resource type="Texture2D" uid="uid://jhcfignm7qry" path="res://assets/Pixel Crawler - Free Pack/Environment/Tilesets/Dungeon_Tiles.png" id="1_a04ho"]
 [ext_resource type="Texture2D" uid="uid://gf6kjp5njwa2" path="res://assets/Pixel Crawler - Free Pack/Environment/Tilesets/Floors_Tiles - copia.png" id="2_xxtyk"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bsk1pni8x0yxy" path="res://assets/Pixel Crawler - Free Pack/Environment/Props/Static/Tools.png" id="13_ytx46"]
 [ext_resource type="Texture2D" uid="uid://cvibtxi7k2ha4" path="res://assets/Pixel Crawler - Free Pack/Environment/Props/Static/Vegetation.png" id="14_fswsb"]
 [ext_resource type="Texture2D" uid="uid://cad4cinvcxuy8" path="res://assets/Pixel Crawler - Free Pack/Environment/Structures/Buildings/Roofs.png" id="15_iduii"]
-[ext_resource type="Texture2D" uid="uid://chaadde7fo1ql" path="res://assets/color_walls.png" id="15_xxtyk"]
+[ext_resource type="Texture2D" uid="uid://dl8fb3fgs7nxw" path="res://assets/color_walls.png" id="15_xxtyk"]
 [ext_resource type="Texture2D" uid="uid://b8qc4ey4s4n86" path="res://assets/Pixel Crawler - Free Pack/Environment/Structures/Buildings/Walls.png" id="16_i2thu"]
 [ext_resource type="Texture2D" uid="uid://b8evsnx72ey6a" path="res://assets/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_01/Size_02.png" id="17_y3r81"]
 [ext_resource type="Texture2D" uid="uid://bnvtgt5a2arvw" path="res://assets/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_01/Size_03.png" id="18_boe6i"]

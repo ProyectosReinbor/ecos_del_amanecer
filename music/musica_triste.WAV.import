@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b5y0i7xsviug8"
-path="res://.godot/imported/pista1.WAV-811cb65b65a3044d80d599efc8e1f74e.sample"
+path="res://.godot/imported/musica_triste.WAV-e6806811ba38bd676849b63e634d4475.sample"
 
 [deps]
 
-source_file="res://music/pista1.WAV"
-dest_files=["res://.godot/imported/pista1.WAV-811cb65b65a3044d80d599efc8e1f74e.sample"]
+source_file="res://music/musica_triste.WAV"
+dest_files=["res://.godot/imported/musica_triste.WAV-e6806811ba38bd676849b63e634d4475.sample"]
 
 [params]
 

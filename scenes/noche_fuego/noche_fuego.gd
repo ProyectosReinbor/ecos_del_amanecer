@@ -42,6 +42,9 @@ class_name Noche_fuego extends Node2D
 @export var tiempo_restante_label: Label;
 @export var ui_control: Control;
 @export var decidir_camino_control: Control;
+@export var musica_dia_tranquilo: AudioStream;
+@export var audio_voces: AudioStreamPlayer;
+@export var audios_voces: Array[AudioStream] = [];
 
 var dialogo_actual: int = 0
 var indice_parte_dialogo: int = 0
@@ -50,6 +53,8 @@ var estado = Estados.dialogos;
 var tiempo_restante = 20;
 
 func _ready():
+	MUSICA_FONDO.stream = musica_dia_tranquilo;
+	MUSICA_FONDO.play();
 	ui_control.visible = false;
 	estado = Estados.dialogos;
 	dialogo.text = "";
@@ -81,7 +86,7 @@ func tiroteo_dialogos():
 func buscar_items():
 	ui_control.visible = true;
 	estado = Estados.buscar_items;
-	GameManager.inventory.clear();
+	GAME_MANAGER.inventory.clear();
 	cinematica.visible = false;
 	padre.set_physics_process(true);
 

@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Ecos_del_amanecer"
-run/main_scene="uid://dp3jhsjxcufc5"
+run/main_scene="uid://dvokyc1blbyup"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b6qxh6c11s2tj"
 
 [autoload]
 
-GameManager="*res://scripts/GameManager.gd"
+GAME_MANAGER="*res://scripts/GameManager.gd"
+MUSICA_FONDO="*res://scenes/MUSICA_FONDO.tscn"
 
 [display]
 

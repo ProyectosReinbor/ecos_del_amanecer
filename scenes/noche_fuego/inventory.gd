@@ -3,7 +3,7 @@ class_name Inventory_noche_fuego extends TextureRect
 @export var objetos: Array[TextureRect] = [];
 @export var seleccionado: TextureRect = null;
 @export var seleccionado_sprite: TextureRect = null;
-@export var objetos_texturas: Dictionary[GameManager.Objetos, Texture2D] = {};
+@export var objetos_texturas: Dictionary[GAME_MANAGER.Objetos, Texture2D] = {};
 var indice_seleccionado: int = 0;
 var last_size = 0;
 
@@ -28,10 +28,10 @@ func _process(_delta: float) -> void:
 		on_mouse_entered(objetos[5]);
 
 func update_inventory():
-	for i in range(0, GameManager.inventory.size()):
+	for i in range(0, GAME_MANAGER.inventory.size()):
 		if (i >= objetos.size()):
 			return
-		var objeto = GameManager.inventory[i]
+		var objeto = GAME_MANAGER.inventory[i]
 		var tex = objetos[i]
 		print(i, objeto, tex);
 		tex.texture = objetos_texturas[objeto]

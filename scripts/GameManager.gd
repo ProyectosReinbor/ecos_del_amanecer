@@ -10,7 +10,7 @@ var inventory: Array[Objetos] = [] # Objetos en el inventario
 enum Objetos {Hamaca, Balas, Cuerda, Escopeta, Fosforos, Documentos, Linterna, Cuchillo, Machete, Hayacas}
 func _ready():
     # Inicialización o configuraciones iniciales
-    print("GameManager cargado y listo para ser usado globalmente.")
+    print("GAME_MANAGER cargado y listo para ser usado globalmente.")
 
 func dead_members():
     alive_members.pop_back()

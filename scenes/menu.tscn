@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqwulsjbdeijl"]
+[gd_scene load_steps=6 format=3 uid="uid://cqwulsjbdeijl"]
 
 [ext_resource type="Script" uid="uid://fn2oylxfkus6" path="res://scripts/menu.gd" id="1_g18jx"]
 [ext_resource type="Texture2D" uid="uid://dfj08gkmf5ggu" path="res://images/fondo menu.png" id="1_j0t7f"]
-[ext_resource type="AudioStream" uid="uid://crpy5opbdb11l" path="res://music/audiomenu.mp3" id="3_6nwqt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g18jx"]
 bg_color = Color(0, 0, 0, 1)
@@ -74,11 +73,6 @@ text = "CREDITOS"
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_pbjm4")
 text = "SALIR"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_6nwqt")
-volume_db = -14.793
-autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]

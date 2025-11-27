@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://cf71cvutn0664"]
+[gd_scene load_steps=72 format=3 uid="uid://cf71cvutn0664"]
 
 [ext_resource type="Script" uid="uid://dmqsad0hy6y3f" path="res://scenes/noche_fuego/noche_fuego.gd" id="1_r8k4a"]
 [ext_resource type="Texture2D" uid="uid://dl2gye3g3b0ht" path="res://assets/IA/la_noche_del_fuego/001.png" id="2_dxsv5"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dpgm3a4wpyooh" path="res://assets/IA/la_noche_del_fuego/006.png" id="7_qsr2x"]
 [ext_resource type="Texture2D" uid="uid://dhr07t5jhx58i" path="res://assets/IA/la_noche_del_fuego/007.png" id="8_x3iks"]
 [ext_resource type="Texture2D" uid="uid://dbytojs6uy3lh" path="res://assets/IA/la_noche_del_fuego/008.jpg" id="9_ceoow"]
+[ext_resource type="AudioStream" uid="uid://cshsextboqyvt" path="res://music/Tirso Aldana - Santo Domingo_256k.mp3" id="10_2iplg"]
 [ext_resource type="Texture2D" uid="uid://bkkyomc06347t" path="res://assets/IA/la_noche_del_fuego/cuarto.png" id="10_dxsv5"]
 [ext_resource type="PackedScene" uid="uid://dp3jhsjxcufc5" path="res://scenes/noche_fuego/padre.tscn" id="10_tmh62"]
 [ext_resource type="Texture2D" uid="uid://dyr2u5okc0js1" path="res://assets/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Collect_Base/Collect_Down-Sheet.png" id="11_p2n5p"]
@@ -203,8 +204,7 @@ cinematica = NodePath("padre/cinematica")
 tiempo_restante_label = NodePath("padre/UI/tiempo_restante")
 ui_control = NodePath("padre/UI")
 decidir_camino_control = NodePath("padre/decidir_camino")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+musica_dia_tranquilo = ExtResource("10_2iplg")
 
 [node name="casa" type="Node2D" parent="."]
 z_index = 10
@@ -512,14 +512,11 @@ offset_top = -90.0
 offset_right = -160.0
 offset_bottom = -90.0
 
-[node name="Panel" type="Panel" parent="padre/cinematica"]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
+[node name="ColorRect" type="ColorRect" parent="padre/cinematica"]
 layout_mode = 0
-offset_left = -4.0
-offset_top = -7.0
-offset_right = 325.0
-offset_bottom = 184.0
+offset_right = 322.0
+offset_bottom = 182.0
+color = Color(0, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="padre/cinematica"]
 layout_mode = 0
@@ -1016,6 +1013,8 @@ shape = SubResource("RectangleShape2D_jab7w")
 
 [node name="segundos" type="Timer" parent="."]
 autostart = true
+
+[node name="Audios_voces" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="padre/decidir_camino/rio" to="padre/decidir_camino" method="_on_rio_pressed"]
 [connection signal="pressed" from="padre/decidir_camino/montaña" to="padre/decidir_camino" method="_on_montaña_pressed"]
